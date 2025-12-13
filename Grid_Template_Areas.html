@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Template Areas</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            width: 100%;
+            height: 100%;
+        }
+        .container{
+            width: 100%;
+            height: 100%;
+            display: grid;
+            gap: 1rem;
+            background-color: rgb(79, 75, 75);
+            padding: 4rem;
+            grid-template-areas: 
+                "header header header"
+                "Sidebar Content1 Content1"
+                "Sidebar Content2 Content3"
+                "Footer Footer Footer"
+            
+            ;
+        }
+        .items{
+            background-color: rgb(82, 82, 184);
+            border: 2px solid black;
+            padding: 1rem;
+            color: white;
+        }
+        #header{
+            grid-area: header;
+
+        }
+        #Sidebar{
+            grid-area: Sidebar;
+
+        }
+        #Content1{
+            grid-area: Content1;
+
+        }
+        #Content2{
+            grid-area: Content2;
+
+        }
+        #Content3{
+            grid-area: Content3;
+
+        }
+        #Footer{
+            grid-area: Footer;
+
+        }
+        
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="items" id="header">Header</div>
+        <div class="items" id="Sidebar">Sidebar</div>
+        <div class="items" id="Content1">Content1</div>
+        <div class="items" id="Content2">Content2</div>
+        <div class="items" id="Content3">Content3</div>
+        <div class="items" id="Footer">Footer</div>
+        <!-- <div class="items">G</div>
+        <div class="items">H</div>
+        <div class="items">I</div>
+        <div class="items">J</div>
+        <div class="items">K</div>
+        <div class="items">L</div> -->
+    </div>
+    
+</body>
+
+</html>
